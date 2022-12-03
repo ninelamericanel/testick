@@ -1,6 +1,6 @@
 import logo from "../../img/icon/icon.svg";
 import logoName from "../../img/icon/Circeya.svg";
-import './header.css';
+import './styles.css';
 
 const Header = () => {
     return (
