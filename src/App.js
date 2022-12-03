@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Section from "./components/Section";
 
 function App() {
     const title = 'ut aliquip ex ea commodo consequat'.toUpperCase()
@@ -11,6 +12,9 @@ function App() {
     return (
         <>
             <Header/>
+            <div className="container">
+                <Section title={title} text={text} blockTitle={blockTitle}/>
+            </div>
             <Footer/>
         </>
     );
