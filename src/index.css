@@ -16,3 +16,9 @@ body {
     margin: 0;
 }
 
+:root {
+    --container: 1400px;
+    --min-container: 1324px;
+    --bg-footer-and-header: black;
+    --color-on-black: white;
+}
