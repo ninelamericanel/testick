@@ -16,6 +16,10 @@ body {
     margin: 0;
 }
 
+#root {
+    overflow: hidden;
+}
+
 :root {
     --container: 1400px;
     --min-container: 1324px;
