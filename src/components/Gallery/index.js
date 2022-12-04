@@ -13,24 +13,27 @@ const Gallery = () => {
         let element = gallery.current;
         let scrollingElement = horizontalScroll.current;
         let pinWrapWidth = scrollingElement?.offsetWidth
+        console.log(pinWrapWidth)
         let t1 = gsap.timeline();
         t1.to(scrollingElement, {
-                scrollTrigger: {
-                    trigger: element,
-                    start: 'top top',
-                    end: pinWrapWidth,
-                    pin: true,
-                    // scroller: '#root',
-                    // scroller: '.container',
-                    scrub: true,
-                    // markers: true,
-                },
-                x: -pinWrapWidth,
-                ease: 'none'
-            })
+            scrollTrigger: {
+                trigger: element,
+                start: '0 top',
+                end: pinWrapWidth + 1000,
+                pin: true,
+                scrub: true,
+                markers: true
+            },
+            x: -pinWrapWidth + 1000,
+            ease: 'none',
+
+        })
     }, [])
     return (
-        <section ref={gallery} className="gallery">
+        <div ref={gallery} className="scroll">
+            <div className="container">
+                <h2 className="title">Title</h2>
+            </div>
             <div className="horizontal-scroll" ref={horizontalScroll}>
                 {arrayOfPhoto.map((src, i) => {
                     return <div key={i} className="gallery__image">
@@ -38,7 +41,7 @@ const Gallery = () => {
                     </div>
                 })}
             </div>
-        </section>
+        </div>
     )
 }
 
