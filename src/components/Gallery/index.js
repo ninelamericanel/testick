@@ -29,7 +29,7 @@ const Gallery = () => {
                 scrub: 2,
                 // markers: true,
             },
-            x: -pinWrapWidth - 250,
+            xPercent: -120,
             duration: 90,
             ease: 'none',
 
