@@ -14,26 +14,12 @@ const Gallery = () => {
         let scrollingElement = horizontalScroll.current;
         let pinWrapWidth = scrollingElement?.offsetWidth
         let t1 = gsap.timeline();
-
-            t1.to(element, {
+        t1.to(scrollingElement, {
                 scrollTrigger: {
                     trigger: element,
                     start: 'top top',
                     end: pinWrapWidth,
-                    // scroller: '#root',
-                    scrub: true,
                     pin: true,
-                    // markers: true,
-                },
-                height: `${scrollingElement.scrollWidth}px`,
-                ease: 'none'
-            })
-
-            t1.to(scrollingElement, {
-                scrollTrigger: {
-                    trigger: scrollingElement,
-                    start: 'top top',
-                    end: pinWrapWidth,
                     // scroller: '#root',
                     // scroller: '.container',
                     scrub: true,
