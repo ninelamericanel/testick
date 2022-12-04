@@ -18,14 +18,19 @@ const Gallery = () => {
         gsap.to(scrollingElement, {
             scrollTrigger: {
                 trigger: element,
+                //`блок рабочаяОбласть`
                 start: `center center`,
                 end: `80% center`,
                 // end: pinWrapWidth,
+                //закрепляется на самой галерее пока она не прокрутится
                 pin: true,
-                scrub: true,
-                markers: true,
+                //задает плавность, в течении этого значения после остановки скролла
+                //идет анимация
+                scrub: 2,
+                // markers: true,
             },
-            x: -pinWrapWidth + 1000,
+            x: -pinWrapWidth - 250,
+            duration: 90,
             ease: 'none',
 
         })
@@ -34,7 +39,7 @@ const Gallery = () => {
         <div ref={gallery} className="gallery__section">
             <div className="container">
                 <div className="gallery__block">
-                    <h2 className="title">Title</h2>
+                    <h2 className="title">{'Lorem ipsum dolor sit amet'.toUpperCase()}</h2>
                     <div className="horizontal-scroll" ref={horizontalScroll}>
                         {arrayOfPhoto.map((src, i) => {
                             return <div key={i} className="gallery__image">

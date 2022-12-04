@@ -18,13 +18,13 @@ function App() {
         <>
             <Header/>
             <div className="main-wrapper">
-                <section className='section'>
+                <section className='section start'>
                     <Section title={title} text={text1} text2={text2} blockTitle={blockTitle} photo1={photo1} photo2={photo2}/>
                 </section>
                 <section className="gallery section">
                     <Gallery title={title}/>
                 </section>
-                <section className='section'>
+                <section className='section end'>
                     <Section title={title} text={text1} text2={text2} blockTitle={blockTitle} photo1={photo3}
                              photo2={photo4}/>
                 </section>
