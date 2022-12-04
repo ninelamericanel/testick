@@ -1,10 +1,14 @@
 .gallery {
-    /*min-height: 90vh;*/
+    height: 100vh;
     /*height: auto;*/
     width: 100vw;
     overflow: hidden;
 
     position: relative;
+}
+
+.gallery__section {
+    height: 100vh;
 }
 
 .horizontal-scroll {

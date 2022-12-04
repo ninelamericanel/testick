@@ -13,13 +13,14 @@ const Gallery = () => {
         let element = gallery.current;
         let scrollingElement = horizontalScroll.current;
         let pinWrapWidth = scrollingElement?.offsetWidth
-        console.log(pinWrapWidth)
+        console.log(element)
         // let t1 = gsap.timeline();
         gsap.to(scrollingElement, {
             scrollTrigger: {
                 trigger: element,
-                start: `top top`,
-                end: pinWrapWidth,
+                start: `center center`,
+                end: `80% center`,
+                // end: pinWrapWidth,
                 pin: true,
                 scrub: true,
                 markers: true,
@@ -30,7 +31,7 @@ const Gallery = () => {
         })
     }, [])
     return (
-        <div ref={gallery} className="container">
+        <div ref={gallery} className="gallery__section">
             {/*<div className="container">*/}
                 <h2 className="title">Title</h2>
             {/*</div>*/}
