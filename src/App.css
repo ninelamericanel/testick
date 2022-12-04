@@ -7,3 +7,14 @@
     max-width: var(--min-container);
     margin: 0 auto;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.gallery {
+    overflow: hidden;
+    position: relative;
+}

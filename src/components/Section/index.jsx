@@ -1,10 +1,10 @@
-import photo1 from "../../img/julia-d-FlNTu2Bj4Dg-unsplash-1.png";
-import photo2 from "../../img/taisiia-stupak-viq7xx1boxo-unsplash 1-1.png";
+
 import './styles.css'
 
-const Section = ({ title, blockTitle, text }) => {
+const Section = ({ end, title, blockTitle, text, photo1, photo2 }) => {
     return (
-        <section className="section">
+        <section className='section'>
+            <div className='container'>
             <h2 className="main__title title">{title}</h2>
             <div className="wrapper">
                 <div className="section__block outside">
@@ -26,6 +26,7 @@ const Section = ({ title, blockTitle, text }) => {
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     )
 }
