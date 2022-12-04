@@ -2,6 +2,7 @@ import './App.css';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Section from "./components/Section";
+import Gallery from "./components/Gallery";
 
 function App() {
     const title = 'ut aliquip ex ea commodo consequat'.toUpperCase()
@@ -14,6 +15,7 @@ function App() {
             <Header/>
             <div className="container">
                 <Section title={title} text={text} blockTitle={blockTitle}/>
+                <Gallery title={title}/>
             </div>
             <Footer/>
         </>
