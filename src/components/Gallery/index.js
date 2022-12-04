@@ -39,7 +39,7 @@ const Gallery = () => {
         <div ref={gallery} className="gallery__section">
             <div className="container">
                 <div className="gallery__block">
-                    <h2 className="title">{'Lorem ipsum dolor sit amet'.toUpperCase()}</h2>
+                    <h2 className="title gallery__title">{'Lorem ipsum dolor sit amet'.toUpperCase()}</h2>
                     <div className="horizontal-scroll" ref={horizontalScroll}>
                         {arrayOfPhoto.map((src, i) => {
                             return <div key={i} className="gallery__image">
