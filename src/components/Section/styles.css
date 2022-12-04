@@ -10,6 +10,12 @@
     row-gap: 100px;
 }
 
+.section__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
 .section__block {
     display: flex;
     gap: 124px;
@@ -43,6 +49,10 @@
 }
 
 .section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-self: center;
     flex: 0 0 40%;
 }
 
@@ -50,6 +60,12 @@
     font-size: 3em;
     line-height: 110%;
     font-weight: normal;
+}
+
+.section__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .section__content p {

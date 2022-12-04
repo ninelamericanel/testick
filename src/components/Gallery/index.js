@@ -32,15 +32,17 @@ const Gallery = () => {
     }, [])
     return (
         <div ref={gallery} className="gallery__section">
-            {/*<div className="container">*/}
-                <h2 className="title">Title</h2>
-            {/*</div>*/}
-            <div className="horizontal-scroll" ref={horizontalScroll}>
-                {arrayOfPhoto.map((src, i) => {
-                    return <div key={i} className="gallery__image">
-                        <img src={src}/>
+            <div className="container">
+                <div className="gallery__block">
+                    <h2 className="title">Title</h2>
+                    <div className="horizontal-scroll" ref={horizontalScroll}>
+                        {arrayOfPhoto.map((src, i) => {
+                            return <div key={i} className="gallery__image">
+                                <img src={src}/>
+                            </div>
+                        })}
                     </div>
-                })}
+                </div>
             </div>
         </div>
     )

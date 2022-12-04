@@ -11,21 +11,21 @@ import photo4 from './img/taisiia-stupak-viq7xx1boxo-unsplash-2.png'
 function App() {
     const title = 'ut aliquip ex ea commodo consequat'.toUpperCase()
     const blockTitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    const text = 'Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
-
+    const text1 = 'Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    const text2 = 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
 
     return (
         <>
             <Header/>
-            <div className="wrapper scroll-wrapper">
+            <div className="main-wrapper">
                 <section className='section'>
-                    <Section title={title} text={text} blockTitle={blockTitle} photo1={photo1} photo2={photo2}/>
+                    <Section title={title} text={text1} text2={text2} blockTitle={blockTitle} photo1={photo1} photo2={photo2}/>
                 </section>
                 <section className="gallery section">
                     <Gallery title={title}/>
                 </section>
                 <section className='section'>
-                    <Section title={title} text={text} blockTitle={blockTitle} photo1={photo3}
+                    <Section title={title} text={text1} text2={text2} blockTitle={blockTitle} photo1={photo3}
                              photo2={photo4}/>
                 </section>
             </div>

@@ -6,12 +6,16 @@
 .container {
     max-width: var(--min-container);
     margin: 0 auto;
+    height: 100%;
 }
 
-.wrapper {
+
+.main-wrapper {
     display: flex;
     flex-direction: column;
     gap: 160px;
+    padding: 200px 0;
+    justify-content: space-between;
 }
 
 .gallery {
