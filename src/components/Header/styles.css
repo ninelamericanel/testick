@@ -14,7 +14,24 @@
     align-items: center;
 }
 
-.logo {
+.header__logo {
     display: flex;
     gap: 5px;
+}
+
+button {
+    font-family: inherit;
+    font-weight: inherit;
+    padding: 0;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.header__button {
+    color: white;
 }
