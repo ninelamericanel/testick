@@ -1,10 +1,9 @@
 import {gsap} from "gsap";
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import './styles.css'
-import arrayOfPhoto from "../../img/slider";
 import {useLayoutEffect, useRef} from "react";
 
-const Gallery = () => {
+const Gallery = ({content}) => {
     gsap.registerPlugin(ScrollTrigger)
     const gallery = useRef(null)
     const horizontalScroll = useRef(null);
@@ -39,9 +38,9 @@ const Gallery = () => {
         <div ref={gallery} className="gallery__section">
             <div className="container">
                 <div className="gallery__block">
-                    <h2 className="title gallery__title">{'Lorem ipsum dolor sit amet'.toUpperCase()}</h2>
+                    <h2 className="title gallery__title">{content.title}</h2>
                     <div className="horizontal-scroll" ref={horizontalScroll}>
-                        {arrayOfPhoto.map((src, i) => {
+                        {content.photos.map((src, i) => {
                             return <div key={i} className="gallery__image">
                                 <img src={src}/>
                             </div>
