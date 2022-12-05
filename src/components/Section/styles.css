@@ -76,7 +76,24 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+    .title {
+        font-size: 1.5em;
+        padding: 0 20px;
+    }
+
+    .section__description h3 {
+        font-size: 1.5em;
+    }
+
+    .section__description p {
+        font-size: 14px;
+    }
+
+    .start {
+        padding-top: 65px;
+    }
+
     .section__wrapper {
         gap: 65px;
     }
@@ -90,9 +107,11 @@
 
     .section__description {
         grid-area: descr;
+        padding: 0 20px;
     }
 
     .section__image {
+        height: 376px;
         width: 100%;
         grid-area: img;
     }
