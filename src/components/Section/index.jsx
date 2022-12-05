@@ -10,7 +10,7 @@ const Section = ({text2, title, blockTitle, text, photo1, photo2}) => {
                         <div className="section__image">
                             <img src={photo1}/>
                         </div>
-                        <div className="section__content">
+                        <div className="section__description">
                             <h3>{blockTitle}</h3>
                             <div className="section__text">
                                 <p>{text}</p>
@@ -19,7 +19,7 @@ const Section = ({text2, title, blockTitle, text, photo1, photo2}) => {
                         </div>
                     </div>
                     <div className="section__block">
-                        <div className="section__content">
+                        <div className="section__description">
                             <h3>{blockTitle}</h3>
                             <div className="section__text">
                                 <p>{text}</p>
