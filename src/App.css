@@ -13,12 +13,18 @@
 .main-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 160px;
-    padding: 200px 0;
+    padding: 40px 0 200px 0;
     justify-content: space-between;
 }
 
 .gallery {
     overflow: hidden;
     position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+    .main-wrapper {
+        padding: 70px 0;
+        gap: 70px;
+    }
 }

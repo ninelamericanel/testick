@@ -16,6 +16,13 @@
     gap: 120px;
 }
 
+@media screen and (min-width: 1024px) {
+    .section__gallery, .section__wrapper {
+        padding-top: 160px;
+    }
+}
+
+
 .section__block {
     display: flex;
     gap: 124px;

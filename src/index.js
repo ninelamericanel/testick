@@ -1,6 +1,7 @@
 import React, {StrictMode} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './normolize.css'
 import App from './App';
 
 const rootElement = document.getElementById("root");
